@@ -1,0 +1,189 @@
+/* UNIVERSAL STYLING FOR ALL OF THE PAGES */
+body {
+  font-family: 'Montserrat', sans-serif; /* Imported font */
+  line-height: 0.5;
+  color: #333;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#header {
+  background-color: #303030;
+  color: #fff;
+  padding: 20px;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#header ul li {
+  margin-right: 20px;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header h1 {
+  font-family: 'Lucida Console', cursive;
+  margin: 0;
+}
+
+#content-wrapper {
+  margin-top: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li::before {
+  content: '•';
+  margin-right: 10px;
+  color: #92b1d3;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+ul.custom-list {
+  padding-left: 20px;
+}
+
+ul.custom-list li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* INDEX PAGE STYLING BASED ON THE SECTIONS */
+#index-school img{
+/* image styling so that the IIT image stretches the entire horizontal length but still has padding on the top and bottom */
+  width: calc(100% + 20px);
+  height: 300px;
+  object-fit: cover;
+  padding: 20px;
+  margin-left: -20px;
+}
+
+/* styling for the h2's to be bold and underlined */
+#index-school h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#index-aboutme h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#index-aboutme img {
+/* gold border and rounded corners for Lawton and cat pics */
+  border: 2px solid #FFD700;
+  border-radius: 40px;
+}
+
+
+/* MUSIC PAGE STYLING BASED ON THE SECTIONS */
+
+#music-section h2 {
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#music-section .image-wrapper img {
+  border-radius: 10px;
+}
+
+#music-video {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#music-video h2 {
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#music-video p {
+  padding: 20px;
+
+}
+
+#music-video iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* RESUME PAGE STYLING BASED ON THE SECTIONS */
+
+#resume-education li {
+  word-wrap: break-word;
+}
+
+#resume-skills {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#resume-skills ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#resume-skills h3 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#resume-skills ul li {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+/* for smaller screens looking at the horizontal list */
+@media (max-width: 600px) {
+  #resume-skills ul li {
+    max-width: 100%;
+  }
+}
+
+#resume-experience h2 {
+  padding: 10px;
+}
