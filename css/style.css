@@ -174,7 +174,7 @@ ul.custom-list li {
 }
 
 /* for smaller screens looking at the horizontal list */
-@media (max-width: 37.5em) { /* Changed to em unit */
+@media (max-width: 37.5em) {
   #resume-skills ul li {
     max-width: 100%;
   }
