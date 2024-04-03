@@ -1,6 +1,6 @@
 /* UNIVERSAL STYLING FOR ALL OF THE PAGES */
 body {
-  font-family: 'Montserrat', sans-serif; /* Imported font */
+  font-family: 'Montserrat', Arial, sans-serif; /* Arial backup font */
   line-height: 1.5em;
   color: #333;
   text-align: center;
@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul.custom-list {
+  list-style: none;
   padding-left: 1.25em;
 }
 
@@ -103,6 +104,16 @@ ul.custom-list li {
   border-radius: 2.5em;
 }
 
+#index-first-column { /* added float */
+  float: center;
+  width: 100%;
+}
+
+#index-second-column { /* added float */
+  float: center;
+  width: 100%;
+}
+
 
 /* MUSIC PAGE STYLING BASED ON THE SECTIONS */
 
@@ -119,7 +130,6 @@ ul.custom-list li {
 #music-video {
   position: relative;
   width: 100%;
-  max-width: 50em;
   margin: auto;
   overflow: hidden;
   border-radius: 0.625em;
@@ -140,6 +150,16 @@ ul.custom-list li {
   box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
+#music-left-column {
+  float: left;
+  width: 50%;
+}
+
+#music-right-column {
+  float: right;
+  width: 50%;
+}
+
 /* RESUME PAGE STYLING BASED ON THE SECTIONS */
 
 #resume-education li {
@@ -158,7 +178,7 @@ ul.custom-list li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 37.5em;
+  width: 100%; /* Using relative units */
   margin: auto;
 }
 
@@ -168,7 +188,7 @@ ul.custom-list li {
 }
 
 #resume-skills ul li {
-  list-style: none;
+  list-style: none; 
   padding: 0.625em;
   margin: 0.313em;
   border-radius: 0.313em;
@@ -176,11 +196,20 @@ ul.custom-list li {
   max-width: 9.375em;
 }
 
+#resume-left-column {
+  float: left;
+  width: 50%;
+}
+
+#resume-right-column {
+  float: right;
+  width: 50%;
+}
+
 /* for smaller screens looking at the horizontal list */
-@media (max-width: 40em) {
+@media (min-width: 40em) { /* min-width used instead of max with */
   #resume-skills ul li {
     list-style: none;
-    max-width: 100%;
   }
 }
 
